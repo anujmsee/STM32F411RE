@@ -1,0 +1,21 @@
+/*
+ * stm32f411re.h
+ *
+ *  Created on: Nov 18, 2021
+ *      Author: anuj
+ */
+
+#ifndef INC_STM32F411RE_H_
+#define INC_STM32F411RE_H_
+
+/*
+ * base address of Flash and SRAM memories
+ */
+
+#define FLASH_BASEADDR						0x08000000U
+#define SRAM1_BASEADDR						0X20000000U
+#define ROM_BASEADDR						0x1FFF0000U
+#define SRAM 								SRAM1_BASEADDR
+
+
+#endif /* INC_STM32F411RE_H_ */

@@ -1,0 +1,46 @@
+/*
+ * stm32f411re.h
+ *
+ *  Created on: Nov 18, 2021
+ *      Author: anuj
+ */
+
+#ifndef INC_STM32F411RE_H_
+#define INC_STM32F411RE_H_
+
+/*
+ * Base address of Flash and SRAM memories
+ */
+
+#define FLASH_BASEADDR						0x08000000U	/*Flash memory base address*/
+#define SRAM1_BASEADDR						0x20000000U	/*SRAM1 memory base address*/
+#define ROM_BASEADDR						0x1FFF0000U	/*ROM/SYSTEM memory base address*/
+#define SRAM 								SRAM1_BASEADDR
+
+/*
+ * AHBx and APBx Bus Peripheral base addresses
+ */
+
+#define PERIPH_BASE							0x40000000U
+#define APB1PERIPH_BASE						PERIPH_BASE
+#define APB2PERIPH_BASE						0x40010000U
+#define AHB1PERIPH_BASE						0x40020000U
+#define AHB2PERIPH_BASE						0x50000000U
+
+/*
+ * Base addresses of peripherals which are hanging on AHB1 Bus
+ */
+
+#define GPIOA_BASEADDR						(AHB1PERIPH_BASE + 0x0000)
+#define GPIOB_BASEADDR						(AHB1PERIPH_BASE + 0x0400)
+#define GPIOC_BASEADDR						(AHB1PERIPH_BASE + 0x0800)
+#define GPIOD_BASEADDR						(AHB1PERIPH_BASE + 0x0C00)
+#define GPIOE_BASEADDR						(AHB1PERIPH_BASE + 0x1000)
+#define GPIOH_BASEADDR						(AHB1PERIPH_BASE + 0x1C00)
+
+/*
+ * Base addresses of peripherals which are hanging on APB1 Bus
+ */
+
+
+#endif /* INC_STM32F411RE_H_ */
